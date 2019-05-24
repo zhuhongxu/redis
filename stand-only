@@ -1,0 +1,18 @@
+1、下载安装与启动
+版本：redis-4.0.14
+https://redis.io/download
+后台启动：./redis-server &
+关闭服务：./redis-cli -p 6379 shutdown
+2、配置
+#bind 127.0.0.1
+daemonize yes
+说明：bind 127.0.0.1这行代码如果不隐藏掉，则外网无法访问redis；daemonize yes表示后台启动；如果redis部署在阿里云上，
+记得配置安全组规则暴露端口
+3、启动
+./redis-server ../redis.conf
+4、关闭
+./redis-cli -p 6379 shutdown
+
+
+
+
